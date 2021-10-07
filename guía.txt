@@ -1,0 +1,17 @@
+#!/bin/bash --> instrucción obligada en archivos .sh
+
+Abrir editor nano con archivo nombreArchivo.tipoarchivo   ->> ejemplo:  nano ./ejercicio2.sh
+
+Habilitar permisos de edición chmod 755 nombreArchivo.tipoarchivo ->> ejemplo:  chmod 755 ./ejercicio2.sh
+
+Condicionar parametros --->> ejemplo:  
+
+#!/bin/bash
+if [ $# != 3 ]
+then
+        echo "Numero de parametros incorrectos"
+else
+        echo "Numero de prametros correctos"
+fi
+
+* Cuidar los espacios, de lo contrario hay erro en la ejecución
